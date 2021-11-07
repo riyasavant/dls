@@ -20,7 +20,7 @@ interface SliderProps {
   onClick?: () => void;
 }
 
-export const Slider: FunctionComponent<SliderProps> = (props: SliderProps) => {
+const Slider: FunctionComponent<SliderProps> = (props: SliderProps) => {
   const className = classNames({
     [styles[`Slider_variant_${props.variant}`]]: props.variant,
   });
@@ -45,3 +45,5 @@ export const Slider: FunctionComponent<SliderProps> = (props: SliderProps) => {
     </div>
   );
 };
+
+export default Slider;
