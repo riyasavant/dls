@@ -5,11 +5,11 @@ import Vertical_Slider from "./Slider";
 
 
 export default {
-  title: "Grid",
+  title: "Vertical Slider",
   component: Grid,
 } as Meta;
 
-export const Basic: Story = (args) => (
+export const Vertical_slider: Story = (args) => (
   <div style={{ position: "relative" }}>
     <Grid
       container
