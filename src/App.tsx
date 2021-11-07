@@ -1,8 +1,9 @@
 import Box from "./components/Box/Box";
 import Grid from "./components/Grid/Grid";
 import GridRuler from "./components/GridRuler/GridRuler";
+import Vertical_Slider from "./components/Vertical_Slider/Slider";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div
       className="App"
@@ -29,9 +30,11 @@ function App() {
         </Grid>
 
         <Grid item xs={1} sm={6} md={4} lg={3}>
-          <Box>Box 4</Box>
+          {/* <Box>Box 4</Box> */}
+          <Vertical_Slider variant="enabled" min={1} max={100} value={29} step={30}></Vertical_Slider>
         </Grid>
       </Grid>
+
     </div>
   );
 }
