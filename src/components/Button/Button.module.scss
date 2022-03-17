@@ -1,0 +1,26 @@
+.Button {
+
+    &_variant_filled {
+        background-color: teal;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 12px;
+    }
+
+    &_variant_outline {
+        background-color: transparent;
+        color: teal;
+        border: 2px solid teal;
+        cursor: pointer;
+        padding: 12px;
+    }
+
+    &_variant_link {
+        background-color: transparent;
+        color: teal;
+        border: none;
+        cursor: pointer;
+        padding: 12px;
+    }
+}
