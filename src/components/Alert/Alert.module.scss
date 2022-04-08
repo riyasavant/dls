@@ -1,0 +1,23 @@
+.warning {
+    background: rgba(#ffcc6a, 0.3);
+    border: 1px solid #ffcc6a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background: rgba(#a9c9a6, 0.3);
+    border: 1px solid #a9c9a6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.failure {
+    background: rgba(#ec5b56, 0.2);
+    border: 1px solid #ec5b56;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
