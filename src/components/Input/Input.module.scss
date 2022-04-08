@@ -1,3 +1,9 @@
-input {
-    background-color: aquamarine;
+.input input {
+    padding: 5px;
+    height: 40px;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
 }

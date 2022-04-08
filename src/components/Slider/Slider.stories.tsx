@@ -12,6 +12,6 @@ export const Enabled: Story = (args) => (
 );
 
 export const Disabled: Story = (args) => (
-    <Slider variant="disabled" min={0} max={100} step={1} value={80} />
+    <Slider variant="disabled" min={0} max={100} step={1} value={60} />
 );
 

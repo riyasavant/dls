@@ -1,5 +1,6 @@
 .Slider {
     &_variant_enabled {
+        width: 30%;
         input[type="range"]{
             position: relative;
             -webkit-appearance: none;
@@ -56,6 +57,7 @@
         // }
     }
     &_variant_disabled {
+        width: 30%;
         input[type="range"]{
             position: relative;
             -webkit-appearance: none;

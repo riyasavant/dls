@@ -8,7 +8,9 @@ export default {
 } as Meta;
 
 export const Enabled: Story = (args) => (
+    <Input name="username" label="Username"></Input>
+);
 
-    <Input name="Enter" label="Enter "></Input>
-
+export const Disabled: Story = (args) => (
+  <Input name="username" label="Username" disabled></Input>
 );

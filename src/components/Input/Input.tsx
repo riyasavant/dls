@@ -1,5 +1,5 @@
 import React, { FC, InputHTMLAttributes} from "react";
-import style from "./Input.module.scss"
+import styles from "./Input.module.scss"
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     name: string;
@@ -8,9 +8,8 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 const Input: FC<InputProps> = ({ name, label, ...rest}) => {
     return (
-        <div className="input-wrapper">
-            <label htmlFor={name}>{label}</label>
-            <input id={name} {...rest} />
+        <div className={styles.input}>
+            <input id={name} placeholder={label} {...rest} />
         </div>
     )
 }
