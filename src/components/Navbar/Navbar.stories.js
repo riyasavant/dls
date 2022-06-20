@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Search from "./Search";
+import Navbar from "./Navbar";
 
 export default {
-    title: 'Search Bar'
+    title: 'Navbar'
 };
 
 export const Basic = () => {
@@ -14,6 +14,6 @@ export const Basic = () => {
     };
 
     return (
-        <Search setQuery={handleChange}/>
+        <Navbar setQuery={handleChange} title="Navbar"/>
     )
 }
