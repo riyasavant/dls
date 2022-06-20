@@ -1,27 +1,38 @@
+import { TrendingUpRounded } from '@mui/icons-material';
 import Alert from './Alert';
 
 export default {
-    title: 'Alert'
+    title: 'Alert',
+    argTypes: {
+        variant: {
+          options: ['warning', 'success', 'failure'],
+          control: { type: 'radio' },
+        },
+        label: 'Warning Alert',
+        isStatic: {
+            options: [false, true],
+          control: { type: 'radio' },
+        },
+        dismiss: {
+            options: [2, 4, 6],
+            control: {type: 'radio'}
+        }
+      },
 };
 
-export const Warning = () => {
-    return <Alert type="warning" text="Warning Alert" isStatic={true}/>
+const Template = (args) => {
+    return <Alert 
+        type={args.variant} 
+        text={args.label} 
+        isStatic={args.isStatic}
+        dismiss={args.dismiss || 100}
+    />
 }
 
-export const Success = () => {
-    return <Alert type="success" text="Success Alert" isStatic={true} />
-}
-
-export const Failure = () => {
-    return <Alert type="failure" text="Failure Alert" isStatic={true}/>
-}
-
-export const Dismiss = () => {
-    return (
-        <>
-            <Alert type="warning" text="This alert will get dismissed in 2 seconds" isStatic={false} dismiss={2}/>
-            <Alert type="failure" text="This alert will get dismissed in 4 seconds" isStatic={false} dismiss={4}/>
-            <Alert type="success" text="This alert will get dismissed in 6 seconds" isStatic={false} dismiss={6}/>
-        </>
-    )
+export const Basic = Template.bind({});
+Basic.args = {
+    variant: 'warning',
+    label: 'Warning Alert',
+    isStatic: true,
+    dismiss: 100,
 }

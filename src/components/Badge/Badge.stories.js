@@ -1,17 +1,22 @@
 import Badge from "./Badge";
 
 export default {
-    title: 'Badge'
+    title: 'Badge',
+    argTypes: {
+        variant: {
+          options: ['warning', 'success', 'failure'],
+          control: { type: 'radio' },
+        },
+        label: 'Warning',
+    },
 };
 
-export const Warning = () => {
-    return <Badge type="warning" text="Warning"/>
+const Template = (args) => {
+    return <Badge type={args.variant} text={args.label}/>
 }
 
-export const Success = () => {
-    return <Badge type="success" text="Success"/>
-}
-
-export const Failure = () => {
-    return <Badge type="failure" text="Failed"/>
+export const Default = Template.bind({});
+Default.args = {
+    variant: 'warning',
+    label: 'Warning'
 }
