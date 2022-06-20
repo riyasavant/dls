@@ -1,5 +1,5 @@
-import { FunctionComponent, useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useRef, useState } from "react";
+import { Canvas, useFrame } from "../../../node_modules/@react-three/fiber";
 
 const Box = (props) => {
   // This reference gives us direct access to the THREE.Mesh object

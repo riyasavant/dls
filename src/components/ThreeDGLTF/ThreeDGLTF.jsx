@@ -1,6 +1,5 @@
-import { FunctionComponent, useRef, useState } from "react";
 import { useLoader } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense } from "react";
 
@@ -22,7 +21,6 @@ export const ThreeDGLTF = (props) => {
         <Suspense fallback={null}>
           <Model />
           <OrbitControls />
-          {/* <Environment preset="sunset" background /> */}
         </Suspense>
       </Canvas>
     </div>

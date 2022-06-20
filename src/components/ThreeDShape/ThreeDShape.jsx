@@ -1,15 +1,10 @@
-import { FunctionComponent, useRef, useState } from "react";
-import { Canvas, useFrame, OrbitControls } from "@react-three/fiber";
-import { Icosahedron } from "@react-three/drei";
+import { useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 
 const IcosahedronShape = (props) => {
-  // This reference gives us direct access to the THREE.Mesh object
-  // Hold state for hovered and clicked events
   const ref = useRef();
   const [clicked, click] = useState(false);
   useFrame((state, delta) => (ref.current.rotation.y += 0.01));
-  // Subscribe this component to the render-loop, rotate the mesh every frame
-  // Return the view, these are regular Threejs elements expressed in JSX
   return (
     <mesh
       {...props}
