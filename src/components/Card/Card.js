@@ -11,7 +11,7 @@ export default function MediaCard({data}) {
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
-          height="150"
+          height="200"
           image={data.img}
           alt="green iguana"
         />
